@@ -7,8 +7,18 @@ document.querySelectorAll('.planet').forEach(planet => {
   });
 
   planet.addEventListener('mousemove', (e) => {
-    tooltip.style.top = (e.pageY + 15) + 'px';
-    tooltip.style.left = (e.pageX + 15) + 'px';
+    const tooltipWidth = tooltip.offsetWidth;
+    const viewportWidth = window.innerWidth;
+    
+    let left = e.pageX + 15;
+    let top = e.pageY + 15;
+
+    if (left + tooltipWidth + 5 > viewportWidth) {
+      left = e.pageX - tooltipWidth - 15;
+    }
+
+    tooltip.style.top = top + 'px';
+    tooltip.style.left = left + 'px';
   });
 
   planet.addEventListener('mouseleave', () => {
