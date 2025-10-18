@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Земля</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    body {
+      background: url('../images/fon3.jpg') no-repeat center center fixed;
+    }
+  </style>
 </head>
 <body>
-  <a href="../index.html" style="color: #4dc3ff;">← Назад к карте</a>
-  <h1>Земля 🌍</h1>
-  <img src="../images/earth.png" alt="Земля" width="200">
-  <p>Третья планета от Солнца, единственная известная планета с жизнью</p>
-  <ul>
-    <li><strong>Орбита:</strong> 365 дней</li>
-    <li><strong>Диаметр:</strong> 12 742 км</li>
-    <li><strong>Спутник:</strong> Луна</li>
-  </ul>
+  <div class="content-box">
+    <a href="../index.html" style="color: #4dc3ff;">← Назад к карте</a>
+    <h1>Земля</h1>
+    <img src="../images/earth.png" alt="Земля" width="200">
+    <div>
+      <p>Третья планета от Солнца, единственная известная планета с жизнью</p>
+      <table>
+        <tr><td><strong>Орбита:</strong> 365 дней</td></tr>
+        <tr><td><strong>Диаметр:</strong> 12 742 км</td></tr>
+        <tr><td><strong>Спутник:</strong> Луна</td></tr>
+      </table>
+    </div>
+    <button id="startTestBtn" class="check-btn">Проверь себя</button>
+    <div id="resultStars" class="stars"></div>
+  </div>
+
+  <div class="test-overlay" id="testOverlay">
+    <div class="test-modal">
+      <h2>Тест по планете Земля</h2>
+      <div id="questionContainer"></div>
+      <div id="feedback" class="feedback"></div>
+      <button id="nextBtn" class="close-btn" style="display:none;">Дальше</button>
+      <button class="close-btn" onclick="closeQuiz()">Закрыть</button>
+    </div>
+  </div>
+  
+  <script src="../js/script.js"></script>
+  <script>
+    fetch('../json/questions_3.json')
+    .then(res => res.json())
+    .then(data => questions = data);
+  </script>
+  <script src="../js/testik.js"></script>
 </body>
 </html>

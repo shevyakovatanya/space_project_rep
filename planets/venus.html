@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Венера </title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <title>Венера</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    body {
+      background: url('../images/fon2.jpg') no-repeat center center fixed;
+    }
+  </style>
 </head>
 <body>
+  <div class="content-box">
     <a href="../index.html" style="color: #4dc3ff;">← Назад к карте</a>
-    <h1>Венера </h1>
+    <h1>Венера</h1>
     <img src="../images/venus.png" alt="Венера" width="200">
-    <p>Вторая планета от Солнца с плотной атмосферой из углекислого газа</p>
-  <ul>
-    <li><strong>Орбита:</strong> 225 дней</li>
-    <li><strong>Диаметр:</strong> 12 104 км</li>
-    <li><strong>Спутник:</strong> Нет естественных спутников </li>
-  </ul>
+    <div>
+      <p>Вторая планета от Солнца с плотной атмосферой из углекислого газа</p>
+      <table>
+        <tr><td><strong>Орбита:</strong> 225 дней</td></tr>
+        <tr><td><strong>Диаметр:</strong> 12 104 км</td></tr>
+        <tr><td><strong>Спутник:</strong> Нет естественных спутников</td></tr>
+      </table>
+    </div>
+    <button id="startTestBtn" class="check-btn">Проверь себя</button>
+  </div>
+
+  <div class="test-overlay" id="testOverlay">
+    <div class="test-modal">
+      <h2>Тест по планете Венера</h2>
+      <div id="questionContainer"></div>
+      <div id="feedback" class="feedback"></div>
+      <button id="nextBtn" class="close-btn">Дальше</button>
+      <button class="close-btn" onclick="closeQuiz()">Закрыть</button>
+    </div>
+  </div>
+  
+  <script src="../js/script.js"></script>
+  <script>
+    fetch('../json/questions_venus.json')
+    .then(res => res.json())
+    .then(data => questions = data);
+  </script>
+  <script src="../js/testik.js"></script>
 </body>
 </html>

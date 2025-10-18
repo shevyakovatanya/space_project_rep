@@ -2,26 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Солнце</title>
+  <title>Сатурн</title>
   <link rel="stylesheet" href="../css/styles.css" />
   <style>
     body {
-      background: url('../images/fon9.jpg') no-repeat center center fixed;
+      background: url('../images/fon6.jpg') no-repeat center center fixed;
     }
   </style>
 </head>
 <body>
   <div class="content-box">
     <a href="../index.html" style="color: #4dc3ff;">← Назад к карте</a>
-    <h1>Солнце</h1>
-    <img src="../images/sun.png" alt="Солнце" width="300">
+    <h1>Сатурн</h1>
+    <img src="../images/saturn.png" alt="Сатурн" width="230">
     <div>
-      <p>Центральное светило нашей Солнечной системы, звезда, которая обеспечивает свет и тепло для планет</p>
+      <p>Шестая планета от Солнца, газовый гигант, известный своими великолепными кольцами</p>
       <table>
-        <tr><td><strong>Тип:</strong> Жёлтый карлик (G2V)</td></tr>
-        <tr><td><strong>Диаметр:</strong> 1 392 700 км</td></tr>
-        <tr><td><strong>Возраст:</strong> около 4,6 миллиардов лет</td></tr>
-        <tr><td><strong>Температура поверхности:</strong> около 5 500 °C</td></tr>
+        <tr><td><strong>Орбита:</strong> 10 759 дней (около 29,5 лет)</td></tr>
+        <tr><td><strong>Диаметр:</strong> 116 460 км</td></tr>
+        <tr><td><strong>Спутники:</strong> Более 80, включая Титан, Рея, Энцелад</td></tr>
       </table>
     </div>
     <button id="startTestBtn" class="check-btn">Проверь себя</button>
@@ -29,7 +28,7 @@
 
   <div class="test-overlay" id="testOverlay">
     <div class="test-modal">
-      <h2>Тест по Солнцу</h2>
+      <h2>Тест по планете Сатурн</h2>
       <div id="questionContainer"></div>
       <div id="feedback" class="feedback"></div>
       <button id="nextBtn" class="close-btn">Дальше</button>
@@ -39,7 +38,7 @@
   
   <script src="../js/script.js"></script>
   <script>
-    fetch('../json/questions_sun.json')
+    fetch('../json/questions_saturn.json')
     .then(res => res.json())
     .then(data => questions = data);
   </script>
