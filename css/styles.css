@@ -112,7 +112,7 @@ body {
       display: inline-block;
       text-align: center;
       margin: 20px auto;
-      max-width: 45%;
+      width: 50%;
     }
 
     .content-box img {
