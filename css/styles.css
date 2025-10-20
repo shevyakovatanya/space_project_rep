@@ -144,7 +144,7 @@ h1 {
     gap: 5px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     .content-box {
       max-width: 80%;
       width: 100%;
@@ -157,7 +157,7 @@ h1 {
       height: auto;
     }
 
-    #planetImage {
+    #planetImage2 {
       width: 50%;
       height: auto;
     }
