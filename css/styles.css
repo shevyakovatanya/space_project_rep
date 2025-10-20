@@ -139,7 +139,7 @@ h1 {
     gap: 5px;
   }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 .test-modal {
   padding: 15px;
 }
