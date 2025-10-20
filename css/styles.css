@@ -139,24 +139,24 @@ h1 {
     gap: 5px;
   }
 
-@media (max-width: 1200px) {
-.test-modal {
-  padding: 15px;
-}
-.check-btn {
-  font-size: 14px;
-  padding: 10px 20px;
-}
-.content-box {
-  width: 90%;
-  padding: 15px;
-}
-.stars {
-  font-size: 20px;
-}
+@media (max-width: 600px) {
+  /* .test-modal {
+    padding: 15px;
+  }
+  .check-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  } */
+  .content-box {
+    width: 90%;
+    /* padding: 15px; */
+  }
+  /* .stars {
+    font-size: 20px;
+  } */
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 .test-modal h2 {
   font-size: 18px;
 }
@@ -173,4 +173,4 @@ h1 {
 .stars {
   font-size: 18px;
 }
-}
+} */
