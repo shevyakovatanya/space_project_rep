@@ -104,6 +104,8 @@ body {
 
     /* Общий блок с фоном для текста, картинки и кнопки */
     .content-box {
+      width: 100%;
+      max-width: 45%;
       background: rgba(255, 255, 255, 0.081);
       padding: 20px;
       border-radius: 12px;
@@ -112,7 +114,6 @@ body {
       display: inline-block;
       text-align: center;
       margin: 20px auto;
-      width: 50%;
     }
 
     .content-box img {
