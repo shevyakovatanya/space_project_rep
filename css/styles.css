@@ -156,4 +156,9 @@ h1 {
       width: 80%;
       height: auto;
     }
+
+    #planetImage {
+      width: 70%;
+      height: auto;
+    }
   }
