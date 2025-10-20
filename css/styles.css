@@ -158,7 +158,7 @@ h1 {
     }
 
     .planet-map {
-      transform: scaleY(0.5); /* уменьшает только по вертикали */
-      transform-origin: top center; /* чтобы сжималось сверху вниз */
+      transform: scale(0.2);
+      transform-origin: top center;
     }
   }
