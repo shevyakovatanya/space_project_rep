@@ -164,9 +164,12 @@ h1 {
   padding: 8px 16px;
   font-size: 13px;
 }
+
 .content-box {
-  padding: 12px;
+  width: 90%;              
+  padding: 15px;             
 }
+
 .stars {
   font-size: 18px;
 }
