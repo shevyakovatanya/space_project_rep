@@ -1,0 +1,28 @@
+[
+    {
+      "text": "What is the Sun mostly made of?",
+      "options": ["Hydrogen and helium", "Rocks and ice", "Oxygen and nitrogen"],
+      "correct": 0
+    },
+    {
+      "text": "How long does sunlight take to reach Earth?",
+      "options": ["1 second", "8 minutes", "1 hour"],
+      "correct": 1
+    },
+    {
+      "text": "How old is the Sun?",
+      "options": ["10,000 years", "46 million years", "About 4.6 billion years"],
+      "correct": 2
+    },
+    {
+      "text": "What keeps the planets moving around the Sun?",
+      "options": ["The Sun’s gravity", "The planets’ winds", "The Moon"],
+      "correct": 0
+    },
+    {
+      "text": "What would happen if the Sun disappeared?",
+      "options": ["Everything would be dark and cold", "There would be more light", "Planets would move faster"],
+      "correct": 0
+    }
+  ]
+  

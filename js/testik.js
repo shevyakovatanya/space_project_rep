@@ -5,7 +5,6 @@ const feedback = document.getElementById('feedback');
 const nextBtn = document.getElementById('nextBtn');
 const starsDiv = document.getElementById('resultStars');
 
-
 let current = 0;
 let score = 0;
 let answered = false;
@@ -28,7 +27,7 @@ function showQuestion() {
 
   const q = questions[current];
   container.innerHTML = `
-    <p><strong>Вопрос ${current + 1} из ${questions.length}:</strong> ${q.text}</p>
+    <p><strong>Question ${current + 1}/${questions.length}:</strong> ${q.text}</p>
     ${q.options.map((opt, i) => `
       <label class="option">
         <input type="radio" name="answer" value="${i}">
@@ -49,11 +48,11 @@ function checkAnswer(e) {
   const correct = questions[current].correct;
 
   if (userAnswer === correct) {
-    feedback.textContent = '✅ Правильно!';
+    feedback.textContent = '✅ Correct!';
     feedback.className = 'feedback correct';
     score++;
   } else {
-    feedback.textContent = `❌ Неправильно. Правильный ответ: ${questions[current].options[correct]}`;
+    feedback.textContent = `❌ Incorrect. Correct answer: ${questions[current].options[correct]}`;
     feedback.className = 'feedback wrong';
   }
 
@@ -78,8 +77,8 @@ function endQuiz() {
   else if (score == 1) stars = '⭐️';
   else stars = '😔';
 
-  container.innerHTML = `<h3>Вы ответили правильно на ${score} из ${questions.length}</h3>`;
+  container.innerHTML = `<h3>Your score is ${score}/${questions.length}</h3>`;
   feedback.textContent = '';
   nextBtn.style.display = 'none';
-  starsDiv.textContent = `Ваш результат: ${stars} (${score}/5)`;
+  starsDiv.textContent = `Score: ${stars} (${score}/5)`;
 }

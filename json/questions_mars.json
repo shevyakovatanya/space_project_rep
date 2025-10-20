@@ -1,0 +1,28 @@
+[
+    {
+      "text": "Why is Mars called the Red Planet?",
+      "options": ["Because it’s very hot", "Because of its rusty color", "Because it glows red at night"],
+      "correct": 1
+    },
+    {
+      "text": "What are Mars’ two moons called?",
+      "options": ["Phobos and Deimos", "Luna and Sol", "Titan and Io"],
+      "correct": 0
+    },
+    {
+      "text": "What do scientists think Mars may have had long ago?",
+      "options": ["Lava", "Trees", "Water"],
+      "correct": 2
+    },
+    {
+      "text": "What are the robots on Mars called?",
+      "options": ["Rovers", "Rockets", "Drones"],
+      "correct": 0
+    },
+    {
+      "text": "What kind of weather happens on Mars?",
+      "options": ["Dust storms", "Snowstorms", "Rainstorms"],
+      "correct": 0
+    }
+  ]
+  

@@ -1,0 +1,28 @@
+[
+    {
+      "text": "Why is Venus so hot?",
+      "options": ["It’s made of fire", "Thick clouds trap heat", "It’s very close to Mars"],
+      "correct": 1
+    },
+    {
+      "text": "What is Venus sometimes called?",
+      "options": ["The Red Planet", "The Ice Planet", "Earth’s “sister planet”"],
+      "correct": 2
+    },
+    {
+      "text": "Which direction does Venus spin?",
+      "options": ["The same as Earth", "The opposite of most planets", "It doesn’t spin"],
+      "correct": 1
+    },
+    {
+      "text": "How is Venus similar to Earth?",
+      "options": ["It has oceans", "It has life", "It’s almost the same size"],
+      "correct": 2
+    },
+    {
+      "text": "What’s longer on Venus — a day or a year?",
+      "options": ["A day", "A year", "They’re the same length"],
+      "correct": 0
+    }
+  ]
+  

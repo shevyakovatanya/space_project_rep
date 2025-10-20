@@ -1,90 +1,92 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Солнечная система для детей</title>
+  <title>Solar System for Kids</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Солнечная система 💫</h1>
-  <p>Наведите курсор на планету, чтобы узнать о ней!</p>
+  <h1>Solar System 💫</h1>
+  <p>Hover over a planet to learn more!</p>
 
   <div class="planet-map">
+
     <div class="planet" 
-         data-name="Солнце" 
-         data-description=""
-         data-url="planets/sun.html" 
+         data-name="Sun" 
+         data-description="The star at the center of our Solar System."
+         data-url="planet.html?name=sun" 
          style="top: 120px; left: -370px;">
-      <img src="images/sun.png" alt="Солнце" width="260" height="260">
+      <img src="images/sun.png" alt="Sun" width="260" height="260">
     </div>
 
     <div class="planet" 
-        data-name="Меркурий" 
-        data-description="Самая близкая к Солнцу планета."
-        data-url="planets/mercury.html" 
+        data-name="Mercury" 
+        data-description="The closest planet to the Sun."
+        data-url="planet.html?name=mercury" 
         style="top: 205px; left: -90px;">
-      <img src="images/mercury.png" alt="Меркурий" width="70" height="70">
+      <img src="images/mercury.png" alt="Mercury" width="70" height="70">
     </div>
 
     <div class="planet" 
-        data-name="Венера" 
-        data-description="Похожа на Землю, но очень горячая."
-        data-url="planets/venus.html" 
+        data-name="Venus" 
+        data-description="Similar in size to Earth, but extremely hot."
+        data-url="planet.html?name=venus" 
         style="top: 190px; left: 0px;">
-      <img src="images/venus.png" alt="Венера" width="100" height="100">
+      <img src="images/venus.png" alt="Venus" width="100" height="100">
     </div>
 
     <div class="planet" 
-        data-name="Земля" 
-        data-description="Наша родная планета 🌍"
-        data-url="planets/earth.html" 
+        data-name="Earth" 
+        data-description="Our home planet 🌍"
+        data-url="planet.html?name=earth" 
         style="top: 190px; left: 120px;">
-      <img src="images/earth.png" alt="Земля" width="100" height="100">
+      <img src="images/earth.png" alt="Earth" width="100" height="100">
     </div>
 
     <div class="planet" 
-        data-name="Марс" 
-        data-description="Красная планета, названа в честь римского бога войны."
-        data-url="planets/mars.html" 
+        data-name="Mars" 
+        data-description="The Red Planet, named after the Roman god of war."
+        data-url="planet.html?name=mars" 
         style="top: 200px; left: 255px;">
-      <img src="images/mars.png" alt="Марс" width="80" height="80">
+      <img src="images/mars.png" alt="Mars" width="80" height="80">
     </div>
 
     <div class="planet" 
-        data-name="Юпитер" 
-        data-description="Крупнейшая планета Солнечной системы, газовый гигант."
-        data-url="planets/jupiter.html" 
+        data-name="Jupiter" 
+        data-description="The largest planet in the Solar System — a gas giant."
+        data-url="planet.html?name=jupiter" 
         style="top: 150px; left: 375px;">
-      <img src="images/jupiter.png" alt="Юпитер" width="180" height="180">
+      <img src="images/jupiter.png" alt="Jupiter" width="180" height="180">
     </div>
 
     <div class="planet" 
-        data-name="Сатурн" 
-        data-description="Известен своими красивыми кольцами из льда и камней."
-        data-url="planets/saturn.html" 
+        data-name="Saturn" 
+        data-description="Famous for its stunning rings made of ice and rock."
+        data-url="planet.html?name=saturn" 
         style="top: 140px; left: 565px;">
-      <img src="images/saturn.png" alt="Сатурн" height="190" style="transform: rotate(180deg);">
+      <img src="images/saturn.png" alt="Saturn" height="190" style="transform: rotate(180deg);">
     </div>
 
     <div class="planet" 
-        data-name="Уран" 
-        data-description="Ледяной гигант, вращается 'на боку' относительно орбиты."
-        data-url="planets/uranus.html" 
+        data-name="Uranus" 
+        data-description="An icy giant that rotates on its side."
+        data-url="planet.html?name=uranus" 
         style="top: 185px; left: 760px;">
-      <img src="images/uranus.png" alt="Уран" width="110" height="110">
+      <img src="images/uranus.png" alt="Uranus" width="110" height="110">
     </div>
 
     <div class="planet" 
-        data-name="Нептун" 
-        data-description="Самый ветреный и холодный газовый гигант синего цвета."
-        data-url="planets/neptune.html" 
+        data-name="Neptune" 
+        data-description="A blue giant with the strongest winds in the Solar System."
+        data-url="planet.html?name=neptune" 
         style="top: 190px; left: 900px;">
-      <img src="images/neptune.png" alt="Нептун" width="100" height="100">
+      <img src="images/neptune.png" alt="Neptune" width="100" height="100">
     </div>
+
   </div>
 
   <div id="tooltip" class="tooltip"></div>
-
+  
   <script src="js/main.js"></script>
 </body>
 </html>

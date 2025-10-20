@@ -1,0 +1,28 @@
+[
+    {
+      "text": "What is Jupiter’s Great Red Spot?",
+      "options": ["A volcano", "A mountain", "A giant storm"],
+      "correct": 2
+    },
+    {
+      "text": "How long is one day on Jupiter?",
+      "options": ["About 10 hours", "24 hours", "100 hours"],
+      "correct": 0
+    },
+    {
+      "text": "What is Jupiter mostly made of?",
+      "options": ["Rocks and metal", "Hydrogen and helium", "Ice and dust"],
+      "correct": 1
+    },
+    {
+      "text": "How many moons does Jupiter have?",
+      "options": ["None", "Only 3", "At least 95"],
+      "correct": 2
+    },
+    {
+      "text": "What is the biggest moon in the Solar System?",
+      "options": ["Ganymede", "The Moon", "Titan"],
+      "correct": 0
+    }
+  ]
+  

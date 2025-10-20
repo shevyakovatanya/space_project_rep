@@ -1,0 +1,28 @@
+[
+    {
+      "text": "Why does Uranus look blue-green?",
+      "options": ["Because of methane gas", "Because it’s made of water", "Because of ice crystals"],
+      "correct": 0
+    },
+    {
+      "text": "What’s special about how Uranus spins?",
+      "options": ["It doesn’t spin at all", "It spins on its side", "It spins backward and forward"],
+      "correct": 1
+    },
+    {
+      "text": "How many moons does Uranus have?",
+      "options": ["1", "27", "100"],
+      "correct": 1
+    },
+    {
+      "text": "How long does a day on Uranus last?",
+      "options": ["About 17 hours", "17 days", "24 hours"],
+      "correct": 0
+    },
+    {
+      "text": "What kind of planet is Uranus called?",
+      "options": ["A rocky planet", "A fire planet", "An ice giant"],
+      "correct": 2
+    }
+  ]
+  

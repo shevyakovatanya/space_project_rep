@@ -1,0 +1,28 @@
+[
+    {
+      "text": "What gives Neptune its blue color?",
+      "options": ["Water", "Methane gas", "Blue rocks"],
+      "correct": 1
+    },
+    {
+      "text": "How many moons does Neptune have?",
+      "options": ["None", "4", "14"],
+      "correct": 2
+    },
+    {
+      "text": "What is Neptune’s dark spot?",
+      "options": ["A big storm", "A hole", "A volcano"],
+      "correct": 0
+    },
+    {
+      "text": "How long does Neptune take to go around the Sun?",
+      "options": ["65 days", "1 year", "165 years"],
+      "correct": 2
+    },
+    {
+      "text": "How was Neptune discovered?",
+      "options": ["Using math", "By accident in space", "With a telescope by aliens"],
+      "correct": 0
+    }
+  ]
+  

@@ -1,0 +1,27 @@
+[
+  {
+    "text": "How long does Earth take to go around the Sun?",
+    "options": ["24 hours", "365 days", "1,000 days"],
+    "correct": 1
+  },
+  {
+    "text": "What protects us from the Sun’s rays?",
+    "options": ["The Moon", "Mountains", "The atmosphere"],
+    "correct": 2
+  },
+  {
+    "text": "How much of Earth’s surface is covered by water?",
+    "options": ["About 10%", "About 70%", "All of it"],
+    "correct": 1
+  },
+  {
+    "text": "What is Earth’s only natural satellite?",
+    "options": ["The Moon", "The Sun", "Mars"],
+    "correct": 0
+  },
+  {
+    "text": "What makes day and night happen?",
+    "options": ["The Sun moving", "Clouds blocking the light", "Earth spinning"],
+    "correct": 2
+  }
+]

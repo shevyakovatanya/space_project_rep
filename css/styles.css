@@ -104,7 +104,7 @@ body {
 
     /* Общий блок с фоном для текста, картинки и кнопки */
     .content-box {
-      background: rgba(255, 255, 255, 0.081);  /* полупрозрачный тёмный фон */
+      background: rgba(255, 255, 255, 0.081);
       padding: 20px;
       border-radius: 12px;
       backdrop-filter: blur(6px);
@@ -112,15 +112,14 @@ body {
       display: inline-block;
       text-align: center;
       margin: 20px auto;
+      max-width: 45%;
     }
 
-    /* Центрирование картинки внутри блока */
     .content-box img {
       display: block;
       margin: 15px auto;
     }
 
-    /* Текст внутри блока */
     .content-box p, 
     .content-box table {
       margin: 10px auto;

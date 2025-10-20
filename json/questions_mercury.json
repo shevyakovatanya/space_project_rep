@@ -1,0 +1,28 @@
+[
+    {
+      "text": "What is Mercury’s surface like?",
+      "options": ["Covered in water", "Full of plants", "Rocky with craters"],
+      "correct": 2
+    },
+    {
+      "text": "How long does one day on Mercury last?",
+      "options": ["1 Earth day", "59 Earth days", "1 year"],
+      "correct": 1
+    },
+    {
+      "text": "Does Mercury have any moons?",
+      "options": ["No", "2 moons", "10 moons"],
+      "correct": 0
+    },
+    {
+      "text": "Why is Mercury named after the messenger god?",
+      "options": ["Because it’s very slow", "Because it’s colorful", "Because it moves quickly"],
+      "correct": 2
+    },
+    {
+      "text": "What makes it easy to jump high on Mercury?",
+      "options": ["Low gravity", "Strong winds", "High mountains"],
+      "correct": 0
+    }
+  ]
+  

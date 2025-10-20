@@ -1,0 +1,28 @@
+[
+    {
+      "text": "What are Saturn’s rings made of?",
+      "options": ["Clouds and fire", "Sand and water", "Ice, dust, and small rocks"],
+      "correct": 2
+    },
+    {
+      "text": "How many moons does Saturn have?",
+      "options": ["Just 1", "Over 80", "10,000"],
+      "correct": 1
+    },
+    {
+      "text": "What is Saturn’s largest moon called?",
+      "options": ["Titan", "Europa", "Ganymede"],
+      "correct": 0
+    },
+    {
+      "text": "How long does Saturn take to orbit the Sun?",
+      "options": ["1 year", "29 years", "100 years"],
+      "correct": 1
+    },
+    {
+      "text": "Could Saturn float on water?",
+      "options": ["Yes", "No, it’s too heavy", "Only if it’s frozen"],
+      "correct": 0
+    }
+  ]
+  
