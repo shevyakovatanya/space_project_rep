@@ -26,6 +26,11 @@ h1 {
   transition: transform 0.3s ease;
 }
 
+.planet img {
+  max-width: 100%; 
+  display: block;
+}
+
 .planet:hover {
   transform: scale(1.2);
 }
@@ -139,38 +144,16 @@ h1 {
     gap: 5px;
   }
 
-@media (max-width: 600px) {
-  /* .test-modal {
-    padding: 15px;
+  @media (max-width: 480px) {
+    .content-box {
+      max-width: 100%;
+      width: 100%;
+      margin: 5; 
+      border-radius: 0;
+    }
+  
+    #planetImage {
+      width: 100%;
+      height: auto;
+    }
   }
-  .check-btn {
-    font-size: 14px;
-    padding: 10px 20px;
-  } */
-  .content-box {
-    width: 90%;
-    /* padding: 15px; */
-  }
-  /* .stars {
-    font-size: 20px;
-  } */
-}
-
-/* @media (max-width: 480px) {
-.test-modal h2 {
-  font-size: 18px;
-}
-.check-btn {
-  padding: 8px 16px;
-  font-size: 13px;
-}
-
-.content-box {
-  width: 90%;              
-  padding: 15px;             
-}
-
-.stars {
-  font-size: 18px;
-}
-} */
