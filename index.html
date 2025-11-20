@@ -6,87 +6,161 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <a id="logout-btn" style="
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 18px;
+  ">
+    Logout
+  </a>
+
+  <div id="user-box" style="
+    position: fixed;
+    top: 35px;
+    right: 10px;
+    padding: 8px 14px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+  "></div>
+  
+
   <h1>Solar System 💫</h1>
   <p>Hover over a planet to learn more!</p>
 
-  <div class="planet-map">
-
+  <div class="planet-map" id="planets-container">
+    <!-- Планеты -->
     <div class="planet" 
          data-name="Sun" 
-         data-description="The star at the center of our Solar System."
-         data-url="planet.html?name=sun" 
-         style="top: 120px; left: 0%">
-      <img id="planetImage2" src="images/sun.png" alt="Sun" width="260" height="260">
+         data-description="The star at the center of our Solar System." 
+         style="top:120px; left:0%;">
+        <a href="planet.html?name=sun">
+          <img src="images/sun.png" alt="Sun" width="260" height="260">
+        </a>
+        <div class="planet-score"></div>
     </div>
-
     <div class="planet" 
-        data-name="Mercury" 
-        data-description="The closest planet to the Sun."
-        data-url="planet.html?name=mercury" 
-        style="top: 205px; left: 20%;">
-      <img id="planetImage2" src="images/mercury.png" alt="Mercury" width="70" height="70">
+         data-name="Mercury" 
+         data-description="The closest planet to the Sun." 
+         style="top:205px; left:20%;">
+      <a href="planet.html?name=mercury">
+        <img src="images/mercury.png" alt="Mercury" width="70" height="70">
+      </a>
+      <div class="planet-score"></div>
     </div>
-
     <div class="planet" 
-        data-name="Venus" 
-        data-description="Similar in size to Earth, but extremely hot."
-        data-url="planet.html?name=venus" 
-        style="top: 190px; left: 26%;">
-      <img id="planetImage2" src="images/venus.png" alt="Venus" width="100" height="100">
+         data-name="Venus" 
+         data-description="Similar in size to Earth, but extremely hot." 
+         style="top:190px; left:26%;">
+      <a href="planet.html?name=venus">
+        <img src="images/venus.png" alt="Venus" width="100" height="100">
+      </a>
+      <div class="planet-score"></div>
     </div>
-
     <div class="planet" 
-        data-name="Earth" 
-        data-description="Our home planet 🌍"
-        data-url="planet.html?name=earth" 
-        style="top: 190px; left: 34.5%;">
-      <img id="planetImage2" src="images/earth.png" alt="Earth" width="100" height="100">
+         data-name="Earth" 
+         data-description="Our home planet 🌍" 
+         style="top:190px; left:34.5%;">
+      <a href="planet.html?name=earth">
+        <img src="images/earth.png" alt="Earth" width="100" height="100">
+      </a>
+      <div class="planet-score"></div>
     </div>
-
     <div class="planet" 
-        data-name="Mars" 
-        data-description="The Red Planet, named after the Roman god of war."
-        data-url="planet.html?name=mars" 
-        style="top: 200px; left: 43.5%;">
-      <img id="planetImage2" src="images/mars.png" alt="Mars" width="80" height="80">
+         data-name="Mars" 
+         data-description="The Red Planet, named after the Roman god of war." 
+         style="top:200px; left:43.5%;">
+      <a href="planet.html?name=mars">
+        <img src="images/mars.png" alt="Mars" width="80" height="80">
+      </a>
+      <div class="planet-score"></div>
     </div>
-
     <div class="planet" 
-        data-name="Jupiter" 
-        data-description="The largest planet in the Solar System — a gas giant."
-        data-url="planet.html?name=jupiter" 
-        style="top: 150px; left: 52%;">
-      <img id="planetImage2" src="images/jupiter.png" alt="Jupiter" width="180" height="180">
+         data-name="Jupiter" 
+         data-description="The largest planet in the Solar System — a gas giant." 
+         style="top:150px; left:52%;">
+      <a href="planet.html?name=jupiter">
+        <img src="images/jupiter.png" alt="Jupiter" width="180" height="180">
+      </a>
+      <div class="planet-score"></div>
     </div>
-
     <div class="planet" 
-        data-name="Saturn" 
-        data-description="Famous for its stunning rings made of ice and rock."
-        data-url="planet.html?name=saturn" 
-        style="top: 140px; left: 65%;">
-      <img id="planetImage2" src="images/saturn.png" alt="Saturn" height="190" style="transform: rotate(180deg);">
+         data-name="Saturn" 
+         data-description="Famous for its stunning rings made of ice and rock." 
+         style="top:140px; left:65%;">
+      <a href="planet.html?name=saturn">
+        <img src="images/saturn.png" alt="Saturn" height="190" style="transform: rotate(180deg);">
+      </a>
+      <div class="planet-score"></div>
     </div>
-
     <div class="planet" 
-        data-name="Uranus" 
-        data-description="An icy giant that rotates on its side."
-        data-url="planet.html?name=uranus" 
-        style="top: 175px; left: 78%;">
-      <img id="planetImage2" src="images/uranus.png" alt="Uranus" width="110" height="110">
+         data-name="Uranus" 
+         data-description="An icy giant that rotates on its side." 
+         style="top:175px; left:78%;">
+      <a href="planet.html?name=uranus">
+        <img src="images/uranus.png" alt="Uranus" width="110" height="110">
+      </a>
+      <div class="planet-score"></div>
     </div>
-
     <div class="planet" 
-        data-name="Neptune" 
-        data-description="A blue giant with the strongest winds in the Solar System."
-        data-url="planet.html?name=neptune" 
-        style="top: 180px; left: 87%;">
-      <img id="planetImage2" src="images/neptune.png" alt="Neptune" width="100" height="100">
+         data-name="Neptune" 
+         data-description="A blue giant with the strongest winds in the Solar System." 
+         style="top:180px; left:87%;">
+      <a href="planet.html?name=neptune">
+        <img src="images/neptune.png" alt="Neptune" width="100" height="100">
+      </a>
+      <div class="planet-score"></div>
     </div>
-
   </div>
 
   <div id="tooltip" class="tooltip"></div>
+
+  <!-- Модальное окно для логина/регистрации -->
+  <div id="auth-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close-btn" onclick="closeQuiz()">&times;</span>
+      <h2 id="auth-title">Login</h2>
   
+      <!-- Login -->
+      <div id="login-section">
+        <form id="login-form">
+          <input type="text" id="login-username" placeholder="Username" required>
+          <input type="password" id="login-password" placeholder="Password" required>
+          <select id="login-role" class="custom-select" required>
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+          <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+      </div>
+  
+      <!-- Register -->
+      <div id="register-section" style="display:none;">
+        <form id="register-form">
+          <input type="text" id="register-username" placeholder="Username" required>
+          <input type="password" id="register-password" placeholder="Password" required>
+          <select id="register-role" class="custom-select" required >
+            <option value="">Select Role</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
+
+          <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+      </div>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/logic.js"></script>
 </body>
 </html>

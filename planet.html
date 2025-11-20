@@ -6,13 +6,15 @@
   <link rel="stylesheet" href="css/styles.css" />
   <style>
     body {
-      background: no-repeat center center fixed;
+      background: black no-repeat center center fixed;
       background-size: cover;
     }
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <script src="js/planet.js"></script> 
+
   <div class="content-box">
     <a href="index.html" style="color: #4dc3ff;">← Go back</a>
     <h1 id="planetTitle"></h1>
@@ -26,33 +28,13 @@
 
   <div class="test-overlay" id="testOverlay">
     <div class="test-modal">
+      <span id="close-modal" class="close-btn" onclick="closeQuiz()">&times;</span>
       <div id="questionContainer"></div>
       <div id="feedback" class="feedback"></div>
-      <button id="nextBtn" class="close-btn" style="display:none;">Continue</button>
-      <button class="close-btn" onclick="closeQuiz()">Close</button>
+      <button id="nextBtn" class="сontinue-btn" style="display:none;">Continue</button>
     </div>
   </div>
 
-  <script src="js/planets.js"></script>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const planetName = params.get('name');
-
-    if (planetName && planets[planetName]) {
-      const data = planets[planetName];
-      document.title = data.title;
-      document.getElementById('pageTitle').textContent = data.title;
-      document.getElementById('planetTitle').textContent = data.title;
-      document.getElementById('planetImage').src = data.image;
-      document.getElementById('planetImage').alt = data.title;
-      document.getElementById('planetDescription').textContent = data.description;
-      document.body.style.backgroundImage = `url('${data.background}')`;
-
-      fetch(data.questions)
-        .then(res => res.json())
-        .then(json => questions = json);
-    }
-  </script>
   <script src="js/testik.js"></script>
 </body>
 </html>

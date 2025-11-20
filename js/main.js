@@ -1,15 +1,17 @@
 const tooltip = document.getElementById('tooltip');
+const planets = document.querySelectorAll('.planet');
 
-document.querySelectorAll('.planet').forEach(planet => {
+planets.forEach(planet => {
+  // наведение мыши
   planet.addEventListener('mouseenter', () => {
     tooltip.innerHTML = `<strong>${planet.dataset.name}</strong><br>${planet.dataset.description}`;
     tooltip.style.display = 'block';
   });
 
+  // движение мыши
   planet.addEventListener('mousemove', (e) => {
     const tooltipWidth = tooltip.offsetWidth;
     const viewportWidth = window.innerWidth;
-    
     let left = e.pageX + 15;
     let top = e.pageY + 15;
 
@@ -17,15 +19,12 @@ document.querySelectorAll('.planet').forEach(planet => {
       left = e.pageX - tooltipWidth - 15;
     }
 
-    tooltip.style.top = top + 'px';
     tooltip.style.left = left + 'px';
+    tooltip.style.top = top + 'px';
   });
 
+  // уход мыши
   planet.addEventListener('mouseleave', () => {
     tooltip.style.display = 'none';
-  });
-
-  planet.addEventListener('click', () => {
-    window.location.href = planet.dataset.url;
   });
 });

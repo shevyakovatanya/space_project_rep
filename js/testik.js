@@ -28,12 +28,14 @@ function showQuestion() {
   const q = questions[current];
   container.innerHTML = `
     <p><strong>Question ${current + 1}/${questions.length}:</strong> ${q.text}</p>
-    ${q.options.map((opt, i) => `
-      <label class="option">
-        <input type="radio" name="answer" value="${i}">
-        ${opt}
-      </label><br>
-    `).join('')}
+    <div class="options-container">
+      ${q.options.map((opt, i) => `
+        <label class="option">
+          <input type="radio" name="answer" value="${i}">
+          <span class="option-text">${opt}</span>
+        </label>
+      `).join('')}
+    </div>
   `;
 
   container.querySelectorAll('input[name="answer"]').forEach(input => {

@@ -37,14 +37,14 @@ h1 {
 
 .tooltip {
   position: absolute;
-  background: rgba(0, 0, 0, 0.772);
-  color: #fff;
-  padding: clamp(8px, 2vw, 12px) clamp(12px, 3vw, 15px);
-  border-radius: 10px;
-  font-size: clamp(12px, 2vw, 14px);
-  pointer-events: none;
   display: none;
-  z-index: 10;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  pointer-events: none; /* чтобы курсор не мешал */
+  z-index: 1000;
 }
 
   /* --- Стили модального окна --- */
@@ -61,6 +61,7 @@ h1 {
   }
   
   .test-modal {
+    position: relative;
     background: white;
     padding: clamp(15px, 3vw, 30px);
     border-radius: 10px;
@@ -97,8 +98,8 @@ h1 {
     transform: translateY(-2px);
   }
 
-  .close-btn {
-    background: #ccc;
+  .сontinue-btn {
+    background: #2563eb;
     border: none;
     padding: clamp(5px, 1.5vw, 10px) clamp(10px, 2.5vw, 15px);
     cursor: pointer;
@@ -106,9 +107,10 @@ h1 {
     margin-top: clamp(8px, 2vw, 10px);
   }
   
-  .close-btn:hover {
-    background: #a6a6a6;
+  .сontinue-btn:hover {
+    background: #1d4ed8;
   }
+
 
   /* Общий блок с фоном для текста, картинки и кнопки */
   .content-box {
@@ -157,3 +159,146 @@ h1 {
       height: auto;
     }
   }
+
+/* Модальное окно для логина/регистрации */
+.modal {
+  display: flex;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* более темный полупрозрачный фон */
+  z-index: 9999; /* поверх всего */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.modal-content {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px; /* более закругленные углы */
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* более выраженная тень */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* эффект плавности */
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 24px; /* увеличенный размер шрифта */
+  color: #888; /* более мягкий цвет */
+  transition: color 0.2s; /* эффект изменения цвета */
+}
+
+.close:hover {
+  color: #f00; /* цвет при наведении */
+}
+
+input {
+  display: block;
+  margin: 15px 0;
+  width: 100%;
+  padding: 12px; /* увеличенный padding для удобства */
+  border: 1px solid #ccc; /* граница */
+  border-radius: 8px; /* закругленные углы */
+  font-size: 16px; /* увеличенный размер шрифта */
+  transition: border-color 0.3s; /* плавное изменение цвета границы */
+}
+
+input:focus {
+  border-color: #007BFF; /* цвет границы при фокусе */
+  outline: none; /* убираем стандартный контур */
+}
+
+button {
+  padding: 12px 20px;
+  border: none; /* убираем стандартные границы */
+  border-radius: 8px; /* закругленные углы */
+  background-color: #007BFF; /* цвет кнопки */
+  color: white; /* цвет текста */
+  font-size: 16px; /* увеличенный размер шрифта */
+  cursor: pointer; /* указатель мыши */
+  transition: background-color 0.3s; /* плавное изменение цвета фона */
+}
+
+button:hover {
+  background-color: #0056b3; /* цвет кнопки при наведении */
+}
+
+.custom-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 5px;
+  background-color: #fff;
+  appearance: none; /* Убираем стандартный стиль */
+  -webkit-appearance: none; /* Для Safari */
+  -moz-appearance: none; /* Для Firefox */
+  cursor: pointer;
+}
+
+/* Стиль для псевдоэлемента */
+.custom-select:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.custom-select:hover {
+  border: 2px solid #0056b3;
+  background-color: #0057b308;
+}
+
+/* Крестик в правом верхнем углу */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+
+  font-size: 36px;        /* большой крестик */
+  /* font-family: Arial, sans-serif; */
+  color: #666;
+
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  background: none;
+  color: #000;             /* черный при наведении */
+}
+
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.option input[type="radio"] {
+  accent-color: #007bff; /* кастомный цвет радиокнопки */
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.planet-score {
+  margin-top: 12px;
+  font-size: 20px;
+  color: white;
+  height: 28px;
+}
+
